@@ -18,9 +18,79 @@
 <body>
     <h1>Form validation HTML5</h1>
 
-    <form>
-        <!-- your input elements here -->
+    <div class="container">
+        <form action="/action_page.php">
+
+        <div class="row">
+            <div class="col-25">
+                <label>First Name</label>
+            </div>
+            <div class="col-75">
+                <input type = "text" name = "firstname" required placeholder="required">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label>Last Name</label>
+            </div>
+            <div class="col-75">
+                <input type = "text" name = "lastname" required  placeholder="required">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label>Email</label>
+            </div>
+            <div class="col-75">
+                <input type = "email" name = "email" required placeholder="required and must be valid">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label>Phone Number</label>
+            </div>
+            <div class="col-75">
+                <input type = "tel" name = "phonenumber" pattern="[\+]\d{12}" placeholder="format: +358401234567">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label>Address</label>
+            </div>
+            <div class="col-75">
+                <input type = "text" name = "address" placeholder="optional">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-25">
+                <label>Postal Code</label>
+            </div>
+            <div class="col-75">
+                <input type = "text" name = "postalcode" pattern="\d{5}" placeholder="enter 5 numbers">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label>Password</label>
+            </div>
+            <div class="col-75">
+                <input type = "password" name = "password" required placeholder="required">
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+
     </form>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
